@@ -1,0 +1,241 @@
+<!--a basic html document-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Today I learned GitHub Copilot</title>
+    <!-- link to chart js lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+
+    <!-- link to script.js -->
+    <script src="script.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- black bootstrap navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Today I learned GitHub Copilot</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- bootstrap tab, with 2 tabs, first one called Data, second one called Chart -->
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <button
+            id="dataTab"
+            class="nav-link active"
+            data-bs-toggle="tab"
+            href="#data"
+            role="tab"
+            aria-controls="data"
+            aria-selected="true"
+          >
+            Data
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            id="chartTab"
+            class="nav-link"
+            data-bs-toggle="tab"
+            href="#chart"
+            role="tab"
+            aria-controls="chart"
+            aria-selected="false"
+          >
+            Chart
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- data tab content -->
+    <div class="container">
+      <div class="tab-content">
+        <div class="tab-pane active" id="data" aria-labelledby="dataTab">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <label for="january" class="fw-bold">January</label>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Income</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Income"
+                    id="januaryIncome"
+                    aria-label="Income"
+                  />
+
+                  <span class="input-group-text">Expenses</span>
+                  <input
+                    type="number"
+                    placeholder="Expenses"
+                    class="form-control"
+                    id="januaryExpenses"
+                    aria-label="Expenses"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6">
+                <label for="february" class="fw-bold">February</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Income</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Income"
+                    id="februaryIncome"
+                    aria-label="Income"
+                  />
+                  <span class="input-group-text">Expenses</span>
+                  <input
+                    type="number"
+                    placeholder="Expenses"
+                    class="form-control"
+                    id="februaryExpenses"
+                    aria-label="Expenses"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <label for="march" class="fw-bold">March</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Income</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Income"
+                    id="marchIncome"
+                    aria-label="Income"
+                  />
+                  <span class="input-group-text">Expenses</span>
+                  <input
+                    type="number"
+                    placeholder="Expenses"
+                    class="form-control"
+                    id="marchExpenses"
+                    aria-label="Expenses"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label for="april" class="fw-bold">April</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Income</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Income"
+                    id="aprilIncome"
+                    aria-label="Income"
+                  />
+                  <span class="input-group-text">Expenses</span>
+                  <input
+                    type="number"
+                    placeholder="Expenses"
+                    class="form-control"
+                    id="aprilExpenses"
+                    aria-label="Expenses"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <label for="may" class="fw-bold">May</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Income</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Income"
+                    id="mayIncome"
+                    aria-label="Income"
+                  />
+                  <span class="input-group-text">Expenses</span>
+                  <input
+                    type="number"
+                    placeholder="Expenses"
+                    class="form-control"
+                    id="mayExpenses"
+                    aria-label="Expenses"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label for="june" class="fw-bold">June</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Income</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Income"
+                    id="juneIncome"
+                    aria-label="Income"
+                  />
+                  <span class="input-group-text">Expenses</span>
+                  <input
+                    type="number"
+                    placeholder="Expenses"
+                    class="form-control"
+                    id="juneExpenses"
+                    aria-label="Expenses"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- chart tab content -->
+    <div class="container">
+      <div class="tab-content">
+        <div class="tab-pane" id="chart" aria-labelledby="chartTab">
+          <!-- bootstrap button with label Download-->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <button type="button" class="btn btn-primary" id="download">
+                  Download
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- chart js bar chart -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <canvas id="myChart" width="400" height="400"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
