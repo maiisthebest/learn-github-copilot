@@ -32,15 +32,27 @@ GitHub Copilot analyses the context and comments in the file you are editing, as
 
 ### Trigger GitHub Copilot suggestions by writing a comment
 
-To trigger a suggestion, just start typing a comment (acting as a prompt) describing what the piece of code does. This is quite crucial to make Copilot return more accurate results. You should write the prompt **describing exactly what the code does** rather than describing what you want.
-
-For example, I wrote the below comment and press `Enter` at the end of the comment. Pressing `Enter` signifies to Copilot that you want to get suggestions.
+To trigger a suggestion, just start typing a comment (acting as a prompt) **describing what the piece of code does**. For example, I wrote the below comment and press `Enter` at the end of the comment. Pressing `Enter` signifies to Copilot that you want to get suggestions.
 
 ```
 <!-- bootstrap tab, with 2 tabs, first one called Data, second one called Chart -->
 ```
 
 <img src="./images/typing-comments.png" alt="Screenshot of typing comment to trigger Copilot suggestions" width="500px"/>
+
+> **_NOTE:_** A good prompt is crucial to make Copilot return more accurate results. You should write the prompt **describing exactly what the code does** rather than describing what you want.
+
+Example of a **_good_** prompt (which explains what the code does):
+
+```
+<!-- bootstrap tab, with 2 tabs, first one called Data, second one called Chart -->
+```
+
+Example of a **_bad_** prompt (which explains what you want Copilot to do):
+
+```
+<!-- Create a bootstrap tab, with 2 tabs, first one called Data, second one called Chart -->
+```
 
 After pressing `Enter`, just wait for a moment and you will notice at the status bar of your VS Code, Copilot is processing your prompt.
 
