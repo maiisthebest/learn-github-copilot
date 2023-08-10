@@ -25,7 +25,37 @@ This repository has all the code and prompts that I used to create the web app.
 
 GitHub Copilot is an AI powered coding assistant that offers autocomplete-style suggestions as you code. There are two ways to trigger suggestions:
 
-- By starting to **write the code** you want to use, or
 - By **writing a comment** (**_a prompt_**) describing what you want the code to do.
+- By starting to **write the code** you want to use, or
 
 GitHub Copilot analyses the context and comments in the file you are editing, as well as related files, and provides suggestions in the form of a single line of code or even a block of code.
+
+### Trigger GitHub Copilot suggestions by writing a comment
+
+To trigger a suggestion, just start typing a comment (acting as a prompt) describing what the piece of code does. This is quite crucial to make Copilot return more correct results. You should write the prompt **describe exactly what the code does** rather than describing what you want.
+
+For example, I wrote the below comment and press `Enter` at the end of the comment. Pressing `Enter` signifies to Copilot that you want to get suggestions.
+
+```
+<!-- bootstrap tab, with 2 tabs, first one called Data, second one called Chart -->
+```
+
+<img src="./images/typing-comments.png" alt="Screenshot of typing comment to trigger Copilot suggestions" width="500px"/>
+
+After pressing `Enter`, just wait for a moment and you will notice at the status bar of your VS Code, Copilot is processing your prompt.
+
+<img src="./images/copilot-spinning.png" alt="Screenshot of Copilot processing comment" width="500px"/>
+
+After Copilot is done processing your comments, it displays the result to your screen. If you're happy with the suggestion, click `Tab` to accept it. You can look at other suggestions if there is more than one.
+
+<img src="./images/copilot-suggestions.png" alt="Screenshot of Copilot giving suggestions" width="500px"/>
+
+### Trigger GitHub Copilot suggestions by writing the code
+
+Another way of triggering suggestions is quite simple, just start writing the code and Copilot will give suggestions on the fly similar to Intellisense. To accept the suggestion, similar to how I explained above, press `Tab`.
+
+<img src="./images/writing-code-to-trigger-suggestions.png" alt="Screenshot of triggering Copilot suggestions by writing the code" width="500px"/>
+
+## My closing thoughts on using GitHub Copilot
+
+I have a lot of thoughts and feedback about Copilot. However, I will refrain from listing them out here so you do not get _spoilers_. I will add a link to my blog that I wrote about my opinions. Stay tuned!!!
