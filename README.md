@@ -70,4 +70,4 @@ Another way of triggering suggestions is quite simple, just start writing the co
 
 ## My closing thoughts on using GitHub Copilot
 
-I have a lot of thoughts and opinions about Copilot. However, I will refrain from listing them here so you do not get _spoilers_ and can try Copilot without any bias. I will add a link to my blog that I wrote about my opinions. Stay tuned!!!
+I have a lot of thoughts and opinions about Copilot. However, I will refrain from listing them here so you do not get _spoilers_ and can try Copilot without any bias. Here is [my blog](https://medium.com/@mai_isthebestbest/can-github-copilot-be-my-ai-pair-programmer-890335b5181) that I wrote about my opinions. Happy reading!
